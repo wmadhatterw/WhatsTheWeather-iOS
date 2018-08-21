@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatsTheWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photomountain.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-TB-ekJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQ9-R9-sGm">
+                                <rect key="frame" x="59" y="48" width="296" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your city:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAM-hr-R26">
+                                <rect key="frame" x="20" y="97" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.G. Austin, Chicago" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Tz-OD-B4t">
+                                <rect key="frame" x="16" y="138" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-UX-5tC">
+                                <rect key="frame" x="182.66666666666666" y="176" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="ict-Gg-zUk">
+                                <rect key="frame" x="16" y="216" width="382" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="zEW-BQ-8zn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Tz-OD-B4t" secondAttribute="trailing" constant="16" id="7Tn-aX-5Qh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAM-hr-R26" secondAttribute="trailing" constant="20" id="8Oc-Pt-7IP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ict-Gg-zUk" secondAttribute="trailing" constant="16" id="9zq-yP-XAc"/>
+                            <constraint firstItem="ej0-TB-ekJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KGo-kM-ozt"/>
+                            <constraint firstItem="SQ9-R9-sGm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KXa-Tx-XbR"/>
+                            <constraint firstItem="w3A-UX-5tC" firstAttribute="top" secondItem="0Tz-OD-B4t" secondAttribute="bottom" constant="8" id="QsS-qN-cCs"/>
+                            <constraint firstItem="mAM-hr-R26" firstAttribute="top" secondItem="SQ9-R9-sGm" secondAttribute="bottom" constant="10" id="RQO-rF-wvt"/>
+                            <constraint firstItem="ej0-TB-ekJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XU3-WA-CGX"/>
+                            <constraint firstItem="0Tz-OD-B4t" firstAttribute="top" secondItem="mAM-hr-R26" secondAttribute="bottom" constant="20" id="XeL-a0-7o0"/>
+                            <constraint firstItem="ej0-TB-ekJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZdD-rO-pds"/>
+                            <constraint firstItem="ej0-TB-ekJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fXE-QE-x3g"/>
+                            <constraint firstItem="mAM-hr-R26" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g60-Qe-gCr"/>
+                            <constraint firstItem="SQ9-R9-sGm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="m9y-SN-6aB"/>
+                            <constraint firstItem="ict-Gg-zUk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mkc-VL-4aT"/>
+                            <constraint firstItem="ict-Gg-zUk" firstAttribute="top" secondItem="w3A-UX-5tC" secondAttribute="bottom" constant="10" id="sWf-zl-YJS"/>
+                            <constraint firstItem="w3A-UX-5tC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tyk-OV-uoe"/>
+                            <constraint firstItem="0Tz-OD-B4t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="x8t-oG-n76"/>
+                            <constraint firstItem="mAM-hr-R26" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xOX-8U-DQ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.710144927536234" y="132.88043478260872"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photomountain.jpeg" width="1050" height="1575"/>
+    </resources>
 </document>

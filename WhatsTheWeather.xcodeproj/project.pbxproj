@@ -12,6 +12,7 @@
 		C9D2EE11212CAA85004CAC85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D2EE0F212CAA85004CAC85 /* Main.storyboard */; };
 		C9D2EE13212CAA86004CAC85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D2EE12212CAA86004CAC85 /* Assets.xcassets */; };
 		C9D2EE16212CAA86004CAC85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D2EE14212CAA86004CAC85 /* LaunchScreen.storyboard */; };
+		C9D2EE1E212CAB1D004CAC85 /* photomountain.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C9D2EE1D212CAB1D004CAC85 /* photomountain.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C9D2EE12212CAA86004CAC85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D2EE15212CAA86004CAC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D2EE17212CAA86004CAC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D2EE1D212CAB1D004CAC85 /* photomountain.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photomountain.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C9D2EE0D212CAA85004CAC85 /* ViewController.swift */,
 				C9D2EE0F212CAA85004CAC85 /* Main.storyboard */,
 				C9D2EE12212CAA86004CAC85 /* Assets.xcassets */,
+				C9D2EE1D212CAB1D004CAC85 /* photomountain.jpeg */,
 				C9D2EE14212CAA86004CAC85 /* LaunchScreen.storyboard */,
 				C9D2EE17212CAA86004CAC85 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 				C9D2EE16212CAA86004CAC85 /* LaunchScreen.storyboard in Resources */,
 				C9D2EE13212CAA86004CAC85 /* Assets.xcassets in Resources */,
 				C9D2EE11212CAA85004CAC85 /* Main.storyboard in Resources */,
+				C9D2EE1E212CAB1D004CAC85 /* photomountain.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
