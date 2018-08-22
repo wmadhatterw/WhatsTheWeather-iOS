@@ -60,7 +60,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         }
                     }
                 }
-                if message == ""{
+                if message == " "{
                     message = "The weather there couldn't be found please try again!"
                 }
                 DispatchQueue.main.sync(execute: {
